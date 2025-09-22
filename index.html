@@ -343,111 +343,212 @@
             transform: rotate(45deg);
         }
 
-        /* Responsive */
+        /* Mobile Accessibility Improvements */
         @media (max-width: 768px) {
             .slide {
-                padding: 2rem 1rem;
+                padding: 1.5rem 1rem;
                 min-height: 100vh;
                 justify-content: flex-start;
-                padding-top: 4rem;
+                padding-top: 5rem;
+                padding-bottom: 6rem;
             }
 
             .slide-content {
                 max-width: 100%;
-                padding: 0 0.5rem;
+                padding: 0;
+                max-height: calc(100vh - 11rem);
+                overflow-y: auto;
             }
 
             .slide-1 h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
                 line-height: 1.2;
                 margin-bottom: 1.5rem;
             }
 
             .slide-1 .subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 line-height: 1.4;
             }
 
             h2 {
-                font-size: 1.8rem;
-                margin-bottom: 2rem;
+                font-size: 1.6rem;
+                margin-bottom: 1.5rem;
                 line-height: 1.3;
             }
 
             p {
-                font-size: 1rem;
+                font-size: 0.95rem;
                 line-height: 1.6;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1.2rem;
+                text-align: left;
             }
 
             .scripture {
-                font-size: 1.1rem;
-                padding: 1.5rem 1rem;
-                margin: 2rem 0;
+                font-size: 1rem;
+                padding: 1.2rem 1rem;
+                margin: 1.5rem 0;
+                text-align: left;
             }
 
             .quote {
-                font-size: 1.1rem;
-                padding: 1.5rem 1rem;
+                font-size: 1rem;
+                padding: 1.2rem 1rem;
                 margin: 1.5rem 0;
+                text-align: left;
             }
 
             .author {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
                 margin-top: 0.8rem;
             }
 
             .steps {
                 max-width: 100%;
-                padding: 0 0.5rem;
+                padding: 0;
             }
 
             .step {
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
                 gap: 1rem;
                 align-items: flex-start;
             }
 
             .step-number {
-                width: 35px;
-                height: 35px;
-                font-size: 0.9rem;
+                width: 32px;
+                height: 32px;
+                font-size: 0.85rem;
                 flex-shrink: 0;
                 margin-top: 0.2rem;
             }
 
             .step-content h3 {
-                font-size: 1rem;
+                font-size: 0.95rem;
                 margin-bottom: 0.4rem;
             }
 
             .step-content p {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 line-height: 1.5;
                 margin: 0;
             }
 
+            /* Interactive Elements Mobile */
+            .quiz-container {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+            }
+
+            .quiz-question {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .quiz-option {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .reflection-prompt {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+            }
+
+            .reflection-textarea {
+                min-height: 60px;
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+
+            .expandable-content {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+
+            .expandable-header {
+                font-size: 0.95rem;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .knowledge-check {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+            }
+
+            .timer-container {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+            }
+
+            .timer-display {
+                font-size: 1.8rem;
+            }
+
+            .timer-btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+                min-height: 44px;
+                min-width: 80px;
+            }
+
+            /* Navigation Mobile */
             .nav-container {
                 top: 1rem;
                 right: 1rem;
-                flex-direction: column;
-                gap: 0.4rem;
+                flex-direction: row;
+                gap: 0.3rem;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 0.5rem;
+                border-radius: 20px;
             }
 
             .nav-dot {
-                width: 10px;
-                height: 10px;
+                width: 8px;
+                height: 8px;
+                min-width: 32px;
+                min-height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
             }
 
             .nav-arrows {
                 bottom: 1rem;
-                gap: 0.8rem;
+                gap: 1rem;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 0.5rem 1rem;
+                border-radius: 25px;
             }
 
             .nav-arrow {
-                width: 45px;
-                height: 45px;
-                font-size: 1.1rem;
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+                background: #383f94;
+                color: white;
+                border: none;
+            }
+
+            .nav-arrow:hover {
+                background: #00adee;
+            }
+
+            .progress-bar {
+                height: 6px;
+            }
+
+            .slide-completion {
+                top: 1rem;
+                left: 1rem;
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
             }
 
             /* Adjust background elements for mobile */
@@ -555,7 +656,7 @@
             }
         }
 
-        /* Ensure touch targets are accessible */
+        /* Accessibility Features */
         @media (max-width: 768px) {
             .nav-dot {
                 min-width: 44px;
@@ -563,12 +664,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
             }
 
             .nav-dot::before {
                 content: '';
-                width: 10px;
-                height: 10px;
+                width: 8px;
+                height: 8px;
                 border-radius: 50%;
                 background: rgba(56, 63, 148, 0.3);
                 transition: all 0.3s ease;
@@ -576,13 +678,351 @@
 
             .nav-dot.active::before {
                 background: #383f94;
-                transform: scale(1.2);
+                transform: scale(1.5);
             }
 
             .nav-arrow {
                 min-width: 44px;
                 min-height: 44px;
             }
+
+            /* Focus states for accessibility */
+            .nav-dot:focus,
+            .nav-arrow:focus,
+            .quiz-option:focus,
+            .timer-btn:focus,
+            .expandable-content:focus {
+                outline: 2px solid #00adee;
+                outline-offset: 2px;
+            }
+
+            .reflection-textarea:focus {
+                outline: 2px solid #00adee;
+                outline-offset: 1px;
+            }
+
+            /* High contrast mode support */
+            @media (prefers-contrast: high) {
+                .quiz-option {
+                    border-width: 3px;
+                }
+                
+                .nav-dot::before {
+                    border: 2px solid currentColor;
+                }
+                
+                .progress-fill {
+                    background: #000;
+                }
+            }
+
+            /* Reduced motion support */
+            @media (prefers-reduced-motion: reduce) {
+                * {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+                
+                html {
+                    scroll-behavior: auto;
+                }
+            }
+        }
+
+        /* Interactive Elements */
+        .interactive-element {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 2px solid rgba(56, 63, 148, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .interactive-element:hover {
+            border-color: rgba(56, 63, 148, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .quiz-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-question {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #383f94;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .quiz-option {
+            padding: 0.8rem 1rem;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .quiz-option:hover {
+            background: #e2e8f0;
+            border-color: #00adee;
+        }
+
+        .quiz-option.correct {
+            background: #dcfce7;
+            border-color: #16a34a;
+            color: #15803d;
+        }
+
+        .quiz-option.incorrect {
+            background: #fef2f2;
+            border-color: #dc2626;
+            color: #dc2626;
+        }
+
+        .quiz-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .quiz-feedback.correct {
+            background: #dcfce7;
+            color: #15803d;
+            border: 1px solid #16a34a;
+        }
+
+        .quiz-feedback.incorrect {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #dc2626;
+        }
+
+        .reflection-prompt {
+            background: rgba(0, 173, 238, 0.1);
+            border-left: 4px solid #00adee;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .reflection-prompt h4 {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            color: #00adee;
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .reflection-textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.8rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 0.9rem;
+            resize: vertical;
+            margin-top: 0.5rem;
+        }
+
+        .reflection-textarea:focus {
+            outline: none;
+            border-color: #00adee;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: 1001;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #383f94, #00adee);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .timer-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: center;
+            border: 2px solid #00adee;
+        }
+
+        .timer-display {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #383f94;
+            margin-bottom: 0.5rem;
+        }
+
+        .timer-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .timer-btn {
+            padding: 0.5rem 1rem;
+            background: #00adee;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .timer-btn:hover {
+            background: #0284c7;
+            transform: translateY(-1px);
+        }
+
+        .timer-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .achievement-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 0.2rem;
+            animation: fadeInScale 0.5s ease;
+        }
+
+        @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .knowledge-check {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .knowledge-check h4 {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            color: #383f94;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .expandable-content {
+            cursor: pointer;
+            padding: 1rem;
+            background: rgba(56, 63, 148, 0.05);
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #383f94;
+        }
+
+        .expandable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #383f94;
+        }
+
+        .expandable-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            margin-top: 0;
+        }
+
+        .expandable-body.expanded {
+            max-height: 200px;
+            margin-top: 1rem;
+        }
+
+        .slide-completion {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .slide-completion.completed {
+            opacity: 1;
+            color: #16a34a;
+        }
+
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Skip link for keyboard navigation */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #383f94;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1002;
+        }
+
+        .skip-link:focus {
+            top: 6px;
         }
 
         /* Smooth scrolling */
@@ -599,45 +1039,78 @@
     </style>
 </head>
 <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-label="Learning progress" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
     <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav-dot active" onclick="goToSlide(0)"></div>
-        <div class="nav-dot" onclick="goToSlide(1)"></div>
-        <div class="nav-dot" onclick="goToSlide(2)"></div>
-        <div class="nav-dot" onclick="goToSlide(3)"></div>
-        <div class="nav-dot" onclick="goToSlide(4)"></div>
-        <div class="nav-dot" onclick="goToSlide(5)"></div>
-        <div class="nav-dot" onclick="goToSlide(6)"></div>
+    <nav class="nav-container" role="navigation" aria-label="Slide navigation">
+        <button class="nav-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1: Introduction" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(1)" aria-label="Go to slide 2: What It Is" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(2)" aria-label="Go to slide 3: Biblical Roots" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(3)" aria-label="Go to slide 4: Early Church" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(4)" aria-label="Go to slide 5: Why It Matters" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(5)" aria-label="Go to slide 6: Practical Guide" tabindex="0"></button>
+        <button class="nav-dot" onclick="goToSlide(6)" aria-label="Go to slide 7: Closing" tabindex="0"></button>
+    </nav>
+
+    <div class="nav-arrows" role="navigation" aria-label="Previous and next slide">
+        <button class="nav-arrow" onclick="previousSlide()" aria-label="Previous slide" tabindex="0">‹</button>
+        <button class="nav-arrow" onclick="nextSlide()" aria-label="Next slide" tabindex="0">›</button>
     </div>
 
-    <div class="nav-arrows">
-        <div class="nav-arrow" onclick="previousSlide()">‹</div>
-        <div class="nav-arrow" onclick="nextSlide()">›</div>
-    </div>
-
-    <!-- Slide 1: Title -->
-    <div class="slide slide-1" id="slide-0">
-        <div class="slide-content">
-            <h1>Contemplative Prayer</h1>
-            <p class="subtitle">A Pathway of Silence and Presence</p>
-        </div>
-    </div>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Slide 1: Title -->
+        <section class="slide slide-1" id="slide-0" aria-labelledby="slide-0-title">
+            <div class="slide-completion" id="completion-0" aria-label="Slide completed">✓</div>
+            <div class="slide-content">
+                <h1 id="slide-0-title">Contemplative Prayer</h1>
+                <p class="subtitle">A Pathway of Silence and Presence</p>
+            </div>
+        </section>
 
     <!-- Slide 2: What It Is -->
     <div class="slide slide-2" id="slide-1">
+        <div class="slide-completion" id="completion-1">✓</div>
         <div class="slide-content">
             <h2>What It Is</h2>
             <p>Contemplative prayer is the practice of resting in God's presence beyond words and petitions. It is a form of prayer that moves past the mind's activity into the heart's stillness, where we simply abide with the Divine.</p>
             <p>This ancient practice invites us to release our need to speak, ask, or even think, and instead to simply be present with God in loving attention.</p>
+            
             <div class="scripture">
                 "In returning and rest you shall be saved; in quietness and in trust shall be your strength."<br>
                 <span class="author">— Isaiah 30:15</span>
+            </div>
+
+            <div class="quiz-container" role="group" aria-labelledby="quiz1-title">
+                <div class="quiz-question" id="quiz1-title">📝 Knowledge Check: What is the primary focus of contemplative prayer?</div>
+                <div class="quiz-options" role="radiogroup" aria-labelledby="quiz1-title">
+                    <button class="quiz-option" onclick="selectQuizOption(this, false, 'quiz1')" role="radio" aria-checked="false" tabindex="0">Making specific requests to God</button>
+                    <button class="quiz-option" onclick="selectQuizOption(this, true, 'quiz1')" role="radio" aria-checked="false" tabindex="0">Resting in God's presence beyond words</button>
+                    <button class="quiz-option" onclick="selectQuizOption(this, false, 'quiz1')" role="radio" aria-checked="false" tabindex="0">Reciting memorized prayers</button>
+                    <button class="quiz-option" onclick="selectQuizOption(this, false, 'quiz1')" role="radio" aria-checked="false" tabindex="0">Reading scripture aloud</button>
+                </div>
+                <div class="quiz-feedback" id="quiz1-feedback" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="reflection-prompt">
+                <h4>💭 Personal Reflection</h4>
+                <p>Think about your current prayer life. How much time do you spend in silence versus speaking?</p>
+                <label for="reflection1" class="sr-only">Your reflection on prayer and silence</label>
+                <textarea id="reflection1" class="reflection-textarea" placeholder="Write your thoughts here..." onchange="markSlideInteracted(1)" aria-describedby="reflection1-help"></textarea>
+                <div id="reflection1-help" class="sr-only">This is a personal reflection space for your thoughts on contemplative prayer</div>
             </div>
         </div>
     </div>
 
     <!-- Slide 3: Biblical Roots -->
     <div class="slide slide-3" id="slide-2">
+        <div class="slide-completion" id="completion-2">✓</div>
         <div class="slide-content">
             <h2>Biblical Roots</h2>
             <p>Scripture is rich with invitations to contemplative presence. From the Psalms to the prophets, we find consistent calls to stillness, silence, and attentive waiting upon God.</p>
@@ -647,17 +1120,35 @@
                 <span class="author">— Psalm 46:10</span>
             </div>
 
+            <div class="expandable-content" onclick="toggleExpandable(this)">
+                <div class="expandable-header">
+                    <span>📖 Explore More Biblical Examples</span>
+                    <span>+</span>
+                </div>
+                <div class="expandable-body">
+                    <p><strong>Mary of Bethany</strong> chose to sit at Jesus' feet in contemplative listening rather than busy activity (Luke 10:39).</p>
+                    <p><strong>Jesus himself</strong> regularly withdrew to lonely places for prayer and communion with the Father (Luke 5:16).</p>
+                    <p><strong>Hannah</strong> prayed silently, moving her lips without speaking aloud (1 Samuel 1:13).</p>
+                </div>
+            </div>
+
             <p>Elijah's encounter with God reveals the divine preference for gentle whispers over dramatic displays. After earthquake, wind, and fire, God spoke in "a sound of sheer silence."</p>
 
             <div class="scripture">
                 "Now there was a great wind... but the Lord was not in the wind... but the Lord was not in the earthquake... but the Lord was not in the fire; and after the fire a sound of sheer silence."<br>
                 <span class="author">— 1 Kings 19:11-12</span>
             </div>
+
+            <div class="knowledge-check">
+                <h4>💡 Did You Know?</h4>
+                <p>The Hebrew word for "be still" in Psalm 46:10 is "raphah," which means to let go, release, or cease striving. It's an invitation to stop our efforts and simply rest in God's presence.</p>
+            </div>
         </div>
     </div>
 
     <!-- Slide 4: Early Church Witness -->
     <div class="slide slide-4" id="slide-3">
+        <div class="slide-completion" id="completion-3">✓</div>
         <div class="slide-content">
             <h2>Early Church Witness</h2>
             <p>The Desert Fathers and Mothers of the early church developed profound practices of contemplative prayer, understanding that union with God required moving beyond the noise of ordinary consciousness.</p>
@@ -667,36 +1158,74 @@
                 <span class="author">— Abba Moses</span>
             </div>
 
+            <div class="quiz-container">
+                <div class="quiz-question">According to the Desert Fathers, what was necessary for union with God?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="selectQuizOption(this, false, 'quiz2')">Constant vocal prayer</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, true, 'quiz2')">Moving beyond the noise of ordinary consciousness</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, false, 'quiz2')">Studying more scripture</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, false, 'quiz2')">Performing more good works</div>
+                </div>
+                <div class="quiz-feedback" id="quiz2-feedback"></div>
+            </div>
+
             <div class="quote">
                 "We must silence every noise in our hearts and minds so that we can hear the gentle whisper of God."<br>
                 <span class="author">— John Cassian</span>
             </div>
 
             <p>These early contemplatives understood that true prayer often happens in the space beyond words, where the soul meets God in pure presence and love.</p>
+
+            <div class="reflection-prompt">
+                <h4>Contemplative Moment</h4>
+                <p>Take 30 seconds of silence right now. Simply breathe and be present. What do you notice?</p>
+                <textarea class="reflection-textarea" placeholder="Describe your experience..." onchange="markSlideInteracted(3)"></textarea>
+            </div>
         </div>
     </div>
 
     <!-- Slide 5: Why It Matters Today -->
     <div class="slide slide-5" id="slide-4">
+        <div class="slide-completion" id="completion-4">✓</div>
         <div class="slide-content">
             <h2>Why It Matters Today</h2>
             <p>In our age of constant noise and distraction, contemplative prayer offers a sanctuary of peace and a pathway to spiritual formation that transforms us from the inside out.</p>
 
-            <p>This practice cultivates:</p>
-            <p><strong>Inner Peace</strong> — A deep calm that transcends circumstances</p>
-            <p><strong>Spiritual Awareness</strong> — Heightened sensitivity to God's presence in daily life</p>
-            <p><strong>Emotional Healing</strong> — Release from anxiety, anger, and restlessness</p>
-            <p><strong>Authentic Self</strong> — Discovery of who we truly are in God</p>
+            <div class="knowledge-check">
+                <h4>🌱 Benefits of Contemplative Prayer</h4>
+                <p><strong>Inner Peace</strong> — A deep calm that transcends circumstances</p>
+                <p><strong>Spiritual Awareness</strong> — Heightened sensitivity to God's presence in daily life</p>
+                <p><strong>Emotional Healing</strong> — Release from anxiety, anger, and restlessness</p>
+                <p><strong>Authentic Self</strong> — Discovery of who we truly are in God</p>
+            </div>
+
+            <div class="quiz-container">
+                <div class="quiz-question">Which benefit of contemplative prayer resonates most with your current life situation?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="selectQuizOption(this, true, 'quiz3', true)">Inner Peace</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, true, 'quiz3', true)">Spiritual Awareness</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, true, 'quiz3', true)">Emotional Healing</div>
+                    <div class="quiz-option" onclick="selectQuizOption(this, true, 'quiz3', true)">Authentic Self Discovery</div>
+                </div>
+                <div class="quiz-feedback" id="quiz3-feedback"></div>
+            </div>
 
             <div class="scripture">
                 "Come to me, all you that are weary and are carrying heavy burdens, and I will give you rest."<br>
                 <span class="author">— Matthew 11:28</span>
+            </div>
+
+            <div class="reflection-prompt">
+                <h4>Personal Assessment</h4>
+                <p>On a scale of 1-10, how would you rate your current level of inner peace? What might contemplative prayer offer you?</p>
+                <textarea class="reflection-textarea" placeholder="Reflect on your spiritual needs..." onchange="markSlideInteracted(4)"></textarea>
             </div>
         </div>
     </div>
 
     <!-- Slide 6: Practical Guide -->
     <div class="slide slide-6" id="slide-5">
+        <div class="slide-completion" id="completion-5">✓</div>
         <div class="slide-content">
             <h2>Practical Guide</h2>
             <div class="steps">
@@ -740,11 +1269,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="timer-container">
+                <h4 style="margin-bottom: 1rem; color: #383f94;">🕯️ Practice Timer</h4>
+                <div class="timer-display" id="timerDisplay">5:00</div>
+                <p style="font-size: 0.9rem; margin: 0.5rem 0;">Start with 5 minutes and gradually increase</p>
+                <div class="timer-controls">
+                    <button class="timer-btn" onclick="startTimer()">Start</button>
+                    <button class="timer-btn" onclick="pauseTimer()">Pause</button>
+                    <button class="timer-btn" onclick="resetTimer()">Reset</button>
+                </div>
+            </div>
+
+            <div class="reflection-prompt">
+                <h4>After Your Practice</h4>
+                <p>How did the experience feel? What did you notice about your thoughts, emotions, or sense of God's presence?</p>
+                <textarea class="reflection-textarea" placeholder="Journal your prayer experience..." onchange="markSlideInteracted(5)"></textarea>
+            </div>
         </div>
     </div>
 
     <!-- Slide 7: Closing Reflection -->
     <div class="slide slide-7" id="slide-6">
+        <div class="slide-completion" id="completion-6">✓</div>
         <div class="slide-content">
             <h2>Closing Reflection</h2>
             <p>May you find in the silence not emptiness, but fullness. May you discover in the stillness not absence, but presence. May your heart learn to rest in the One who is always waiting for you in love.</p>
@@ -759,19 +1306,170 @@
                 <span class="author">— Zephaniah 3:17</span>
             </div>
 
+            <div class="reflection-prompt" style="background: rgba(255, 255, 255, 0.1); border-left-color: rgba(255, 255, 255, 0.5);">
+                <h4 style="color: rgba(255, 255, 255, 0.9);">Your Commitment</h4>
+                <p style="color: rgba(255, 255, 255, 0.8);">What is one small step you will take this week to begin or deepen your contemplative prayer practice?</p>
+                <textarea class="reflection-textarea" placeholder="Write your commitment here..." onchange="markSlideInteracted(6)" style="background: rgba(255, 255, 255, 0.9);"></textarea>
+            </div>
+
+            <div id="achievementContainer" style="margin-top: 2rem; text-align: center;"></div>
+
             <p style="margin-top: 3rem; font-style: italic; opacity: 0.9;">Go in peace to love and serve the Lord in the silence of your heart.</p>
         </div>
-    </div>
+    </section>
+    </main>
 
     <script>
         let currentSlide = 0;
         const totalSlides = 7;
+        let slideInteractions = new Array(totalSlides).fill(false);
+        let quizScores = { correct: 0, total: 0 };
+        let timerInterval;
+        let timerSeconds = 300; // 5 minutes
+        let timerRunning = false;
 
         function updateNavigation() {
             const dots = document.querySelectorAll('.nav-dot');
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentSlide);
             });
+            updateProgressBar();
+        }
+
+        function updateProgressBar() {
+            const progress = ((currentSlide + 1) / totalSlides) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        function markSlideInteracted(slideIndex) {
+            slideInteractions[slideIndex] = true;
+            document.getElementById(`completion-${slideIndex}`).classList.add('completed');
+            checkForAchievements();
+        }
+
+        function selectQuizOption(element, isCorrect, quizId, isPersonal = false) {
+            const options = element.parentElement.querySelectorAll('.quiz-option');
+            const feedback = document.getElementById(quizId + '-feedback');
+            
+            // Clear previous selections
+            options.forEach(opt => {
+                opt.classList.remove('correct', 'incorrect');
+            });
+            
+            // Mark selection
+            if (isCorrect || isPersonal) {
+                element.classList.add('correct');
+                quizScores.correct++;
+                if (isPersonal) {
+                    feedback.innerHTML = "Great choice! Each person's spiritual journey is unique, and contemplative prayer meets us where we are.";
+                } else {
+                    feedback.innerHTML = "Correct! You're understanding the essence of contemplative prayer.";
+                }
+                feedback.className = 'quiz-feedback correct';
+            } else {
+                element.classList.add('incorrect');
+                feedback.innerHTML = "Not quite. Contemplative prayer focuses on being present with God beyond words and activities.";
+                feedback.className = 'quiz-feedback incorrect';
+            }
+            
+            quizScores.total++;
+            feedback.style.display = 'block';
+            
+            // Mark slide as interacted
+            const slideIndex = parseInt(quizId.replace('quiz', '')) + 1;
+            markSlideInteracted(slideIndex);
+            
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 4000);
+        }
+
+        function toggleExpandable(element) {
+            const body = element.querySelector('.expandable-body');
+            const header = element.querySelector('.expandable-header span:last-child');
+            
+            if (body.classList.contains('expanded')) {
+                body.classList.remove('expanded');
+                header.textContent = '+';
+            } else {
+                body.classList.add('expanded');
+                header.textContent = '−';
+                
+                // Mark slide as interacted
+                const slideElement = element.closest('.slide');
+                const slideIndex = parseInt(slideElement.id.replace('slide-', ''));
+                markSlideInteracted(slideIndex);
+            }
+        }
+
+        function startTimer() {
+            if (!timerRunning) {
+                timerRunning = true;
+                timerInterval = setInterval(() => {
+                    timerSeconds--;
+                    updateTimerDisplay();
+                    
+                    if (timerSeconds <= 0) {
+                        clearInterval(timerInterval);
+                        timerRunning = false;
+                        alert('🕯️ Your contemplative prayer time is complete. Take a moment to slowly return to awareness.');
+                        markSlideInteracted(5);
+                        awardAchievement('Prayer Practitioner', '🙏');
+                    }
+                }, 1000);
+            }
+        }
+
+        function pauseTimer() {
+            if (timerRunning) {
+                clearInterval(timerInterval);
+                timerRunning = false;
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            timerSeconds = 300;
+            updateTimerDisplay();
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timerSeconds / 60);
+            const seconds = timerSeconds % 60;
+            document.getElementById('timerDisplay').textContent = 
+                `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function checkForAchievements() {
+            const completedSlides = slideInteractions.filter(Boolean).length;
+            
+            if (completedSlides === 3 && !hasAchievement('Engaged Learner')) {
+                awardAchievement('Engaged Learner', '📚');
+            }
+            
+            if (completedSlides === totalSlides && !hasAchievement('Journey Complete')) {
+                awardAchievement('Journey Complete', '🌟');
+            }
+            
+            if (quizScores.correct >= 2 && !hasAchievement('Knowledge Seeker')) {
+                awardAchievement('Knowledge Seeker', '🧠');
+            }
+        }
+
+        function hasAchievement(title) {
+            const container = document.getElementById('achievementContainer');
+            return container && container.innerHTML.includes(title);
+        }
+
+        function awardAchievement(title, emoji) {
+            const container = document.getElementById('achievementContainer');
+            if (container) {
+                const badge = document.createElement('span');
+                badge.className = 'achievement-badge';
+                badge.innerHTML = `${emoji} ${title}`;
+                container.appendChild(badge);
+            }
         }
 
         function goToSlide(slideIndex) {
@@ -855,5 +1553,5 @@
             }
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9831bce18307453e',t:'MTc1ODU0MzQzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9831c834c55b8bfe',t:'MTc1ODU0Mzg5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
